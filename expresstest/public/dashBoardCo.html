@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Dashboard</title>
+    <link rel="stylesheet" href="dashBoardCo.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Company Dashboard</h1>
+        
+        <section id="job-offers-section">
+            <h2>Your Job Offers</h2>
+            <div id="jobs-container">
+                
+            </div>
+        </section>
+        
+        <section id="add-job-section">
+            <h2>Add New Job Offer</h2>
+            <form id="add-job-form">
+                <input type="text" id="title" placeholder="Title" required>
+                <input type="text" id="libelle" placeholder="Libelle" required>
+                <input type="text" id="jobType" placeholder="Job Type" required>
+                <input type="text" id="workingTime" placeholder="Working Time" required>
+                <input type="text" id="contractType" placeholder="Contract Type" required>
+                <input type="number" id="salary" placeholder="Salary" required>
+                <input type="text" id="country" placeholder="Country" required>
+                <input type="text" id="city" placeholder="City" required>
+                <input type="text" id="adress" placeholder="Address" required>
+                <input type="text" id="zipCode" placeholder="Zip Code" required>
+                <input type="text" id="companyID" placeholder="Company ID" required>
+                <button type="submit">Add Job Offer</button>
+            </form>
+        </section>
+        
+        
+        <section id="applications-section">
+            <h2>Job Applications</h2>
+            <div id="applications-container"></div>
+        </section>
+        
+        <script src="dashBoardCo.js"></script>
+    </div>
+</body>
+</html>

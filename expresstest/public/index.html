@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="user-add">
+        <h2>Create a User</h2>
+        <form id="userForm">
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="email" id="username" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="date" id="birthday" placeholder="Birthday" required>
+            <input type="text" id="phoneNumber" placeholder="Phone Number" required>
+            <select id="gender">
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+            </select>
+            <select id="employer">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+            <input type="text" id="country" placeholder="Country" required>
+            <input type="text" id="city" placeholder="City" required>
+            <input type="text" id="adress" placeholder="Address" required>
+            <input type="text" id="zipCode" placeholder="Zip Code" required>
+            <input type="button" onclick="createUser()" value="Create User">           
+        </form>
+    </div>
+
+
+    <div class="company-add">
+        <h2>Add a company</h2>
+        <input type="button" id='getData' onclick="createCompany()" value="createCompany">           
+    </div>
+    <div class="jobs-add">
+        <h2>Add a job offer</h2>
+        <input type="button" id='getData' onclick="createJob()" value="createJob">           
+    </div>
+    <div class="jobs-list">
+        <h2>Available Jobs</h2>
+        <input type="button" id='getData' onclick="fetchJobs()" value="fetchJobs">           
+    </div>
+    <script src="scriiipt.js"></script>
+</body>
+</html>
